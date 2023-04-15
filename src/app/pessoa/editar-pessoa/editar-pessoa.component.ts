@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PessoaService } from '../services/pessoa.service';
 import { NgForm } from '@angular/forms';
-import { Pessoa } from 'src/app/shared/models/pessoa.model';
+import { Pessoa } from 'src/app/shared';
 
 @Component({
   selector: 'app-editar-pessoa',

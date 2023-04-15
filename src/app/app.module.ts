@@ -5,15 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PessoaModule } from './pessoa/pessoa.module';
 
+import { SharedModule } from './shared';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PessoaModule
+    PessoaModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

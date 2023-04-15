@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Pessoa } from 'src/app/shared/models/pessoa.model';
+import { Pessoa } from 'src/app/shared';
 import { PessoaService } from '../services/pessoa.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class InserirPessoaComponent implements OnInit {
   constructor(private pessoaService: PessoaService, private router: Router) { }
 
   ngOnInit(): void {
-    this.pessoa = new Pessoa();
+    this.pessoa = new Pessoa(0, "", 0);
   }
 
   inserir(): void {
