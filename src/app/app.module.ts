@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PessoaModule } from './pessoa/pessoa.module';
 
 import { SharedModule } from './shared';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SharedModule } from './shared';
     BrowserModule,
     AppRoutingModule,
     PessoaModule,
-    SharedModule
+    SharedModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
