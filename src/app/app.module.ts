@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PessoaModule } from './pessoa/pessoa.module';
+import { EnderecoModule } from './endereco/endereco.module';
 
 import { SharedModule } from './shared';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,12 +14,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
 
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PessoaModule,
+    EnderecoModule,
     SharedModule,
     NgbModule
   ],
